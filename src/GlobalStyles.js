@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
     --white: #fff;
     --frontEnd: #6bd1ff;
     --backEnd: #00c86f;
+
+    --bodyPaddingTop: 94px;
+  
   }
 
 * {
@@ -25,6 +28,7 @@ body {
   background-size: cover;
   color: ${(props) => (props.whiteColor ? "white" : "black")};
   -webkit-font-smoothing: antialiased !important;
+  padding-top: var(--bodyPaddingTop);
 }
 
 body,
@@ -39,7 +43,6 @@ button {
   display: flex;
   flex-direction: column;
 }
-
 
 a {
   color: inherit;
