@@ -20,17 +20,11 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-  min-height: 100%;
-}
-
 body {
-  background: #141414 url("./assets/background.jpg") no-repeat;*/
+  background: #141414 url("./assets/background.jpg") no-repeat;
   background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
   color: ${(props) => (props.whiteColor ? "white" : "black")};
+  -webkit-font-smoothing: antialiased !important;
 }
 
 body,
@@ -40,6 +34,13 @@ button {
   font-size: 14px;
 }
 
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}
+
+
 a {
   color: inherit;
 }
@@ -48,4 +49,5 @@ button {
   cursor: pointer;
 }
 `;
+
 export default GlobalStyle;
