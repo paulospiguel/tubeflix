@@ -33,6 +33,7 @@ body {
 
 body,
 input,
+textarea,
 button {
   font-family: "Roboto", sans-serif;
   font-size: 14px;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Logo, Menu } from "./styles";
 
 import IsLogo from "../../assets/images/logo_cover.png";
-import Button from "../../components/Button";
+import Button from "../Button";
 
 function MenuNav() {
   return (

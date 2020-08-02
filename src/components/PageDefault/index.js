@@ -1,6 +1,6 @@
 import React from "react";
 
-import Menu from "../Menu";
+import MenuNav from "../MenuNav";
 import Footer from "../Footer";
 
 import { Main } from "./styles";
@@ -8,7 +8,7 @@ import { Main } from "./styles";
 function PageDefault({ children }) {
   return (
     <>
-      <Menu />
+      <MenuNav />
       <Main>{children}</Main>
       <Footer />
     </>
